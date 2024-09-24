@@ -26,7 +26,8 @@ const loggerMiddleware = async (req, res, next) => {
         const logData = `${req.url} - ${JSON.stringify(req.body)}`
         logger.info(logData);
     }
-    next();console.log();
+    next();
+    console.log();
 }
 
 export default loggerMiddleware;
